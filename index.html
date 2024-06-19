@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Happy Birthday Avantika!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap">
     <style>
@@ -53,9 +53,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Ensure content spans the entire viewport */
             margin: 0;
-            overflow: hidden;
+            overflow: hidden; /* Prevent default browser scrolling */
             font-family: 'Montserrat', sans-serif;
             color: #ecf0f1;
         }
@@ -225,4 +225,5 @@
     <div class="confetti"></div>
     <div class="confetti"></div>
     <div class="confetti"></div>
-    <div class="confetti
+</body>
+</html>
