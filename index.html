@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Avu!</title>
+    <title>Happy Birthday Avantika!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap">
     <style>
         @keyframes float {
@@ -65,7 +65,7 @@
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            max-width: 400px;
+            max-width: 90%;
             text-align: center;
             position: relative;
             z-index: 1;
@@ -172,6 +172,26 @@
             font-family: 'Dancing Script', cursive;
             animation: glow 2s infinite;
         }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 600px) {
+            .card {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            .card h1 {
+                font-size: 2em;
+            }
+
+            .card p {
+                font-size: 1em;
+            }
+
+            .heart {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -185,28 +205,24 @@
         <p>Happy Birthday, my love!</p>
         <p>I hope this year brings you everything you've been wishing for.</p>
         <p>With all my love,</p>
-        <p class="special-name">Your's forever ❤️ Rishu</p>
+        <p class="special-name">[Your Name]</p>
         <audio controls autoplay loop style="margin-top: 20px;">
             <source src="happy_birthday_song.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
 
+    <!-- Balloons -->
     <div class="balloon"></div>
     <div class="balloon"></div>
     <div class="balloon"></div>
     <div class="balloon"></div>
     <div class="balloon"></div>
 
+    <!-- Confetti -->
     <div class="confetti"></div>
     <div class="confetti"></div>
     <div class="confetti"></div>
     <div class="confetti"></div>
     <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-</body>
-</html>
+    <div class="confetti
