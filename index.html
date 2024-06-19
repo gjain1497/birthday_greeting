@@ -206,42 +206,19 @@
         <p>Thank you for being you.</p>
         <p class="heart">❤️</p>
         <p>Happy Birthday, my love!</p>
-        <p>I hope this year brings you everything you've been wishing for.</p>
-        <p>With all my love,</p>
-        <p class="special-name">[Your Name]</p>
-        <!-- Audio Element -->
-        <audio id="birthdayAudio" controls loop style="margin-top: 20px;">
-            <source src="happy_birthday_song.mp3" type="audio/mpeg">
-            <source src="happy_birthday_song.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
-        </audio>
+        <p class="special-name">With love, [Your Name]</p>
     </div>
-
-    <!-- Balloons -->
-    <div class="balloon"></div>
-    <div class="balloon"></div>
-    <div class="balloon"></div>
-    <div class="balloon"></div>
-    <div class="balloon"></div>
-
-    <!-- Confetti -->
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-
-    <!-- JavaScript to handle audio playback -->
+    <audio id="birthdaySong" autoplay>
+        <source src="Happy_Birthday_Song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <script>
-        // Function to play audio on user interaction (e.g., button click)
-        function playAudio() {
-            var audio = document.getElementById('birthdayAudio');
-            audio.play();
-        }
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('birthdaySong');
+            audio.play().catch(error => {
+                console.log('Autoplay was prevented: ', error);
+            });
+        });
     </script>
 </body>
 </html>
